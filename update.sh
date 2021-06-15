@@ -10,7 +10,8 @@ fi
 # =========================== CURRENT VERSION INFO =============================
 echo "--> Getting version numbers"
 
-CURR_VERSION=$(curl -s https://jpadilla.github.io/redisapp/ | grep -o '<div class="current-version">v.*' | grep -o '[0-9]*\.[0-9]*\.[0-9]*-build\.[0-9]*')
+# CURR_VERSION=$(curl -s https://jpadilla.github.io/redisapp/ | grep -o '<div class="current-version">v.*' | grep -o '[0-9]*\.[0-9]*\.[0-9]*-build\.[0-9]*')
+CURR_VERSION=4.0.2
 
 CURR_REDIS=$(echo $CURR_VERSION | grep -o '^[0-9]*\.[0-9]*\.[0-9]*')
 CURR_BUILD=$(echo $CURR_VERSION | grep -o '[0-9]*$')
