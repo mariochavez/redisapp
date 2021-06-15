@@ -112,7 +112,7 @@ mkdir -p ./_posts/release/
 echo "---
 version: $RELEASE_VERSION
 redis_version: $VERSION
-package_url: https://github.com/jpadilla/redisapp/releases/download/$RELEASE_VERSION/Redis.zip
+package_url: https://github.com/mariochavez/redisapp/releases/download/$RELEASE_VERSION/Redis.zip
 package_length: $FILE_SIZE
 category: release
 ---
@@ -128,7 +128,7 @@ echo "git tag $RELEASE_VERSION"
 echo "git push origin --tags"
 echo ""
 echo "Upload Redis.zip to GitHub"
-echo "https://github.com/jpadilla/redisapp/releases/tag/$RELEASE_VERSION"
+echo "https://github.com/mariochavez/redisapp/releases/tag/$RELEASE_VERSION"
 echo ""
 echo "git co gh-pages"
 echo "git add ."
